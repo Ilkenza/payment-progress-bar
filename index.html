@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Progress Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/86f1d555ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="all">
+        <div class="progressbar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-step progress-step-active" data-title="Items"></div>
+            <div class="progress-step" data-title="Method of delivery"></div>
+            <div class="progress-step" data-title="Customer data"></div>
+            <div class="progress-step" data-title="Method of payment"></div>
+            <div class="progress-step" data-title="Cart overview"></div>
+          </div>
+          <div class="all-in">
+            <div class="Items card s-active">
+        <div class="item">
+            <div class="iitem">
+            <img src="img/10c859121bfd13c510616fe9d440c863.png" width="200px" alt="">
+            <div class="items-content">
+                <h4>APPLE iPhone 13 Pro Max 128GB Sierra Blue</h4>
+                <p>Price: <span class="apto">1536</span>$ x <span class="numberr">1</span> </p>
+            </div>
+            <div class="inp-num">
+            <div class="inp-numb">
+                <i class="fa fa-minus" aria-hidden="true"></i>
+            <span class="number">1</span>
+            <i class="fa fa-plus" aria-hidden="true"></i>
+        </div>
+    </div>
+    </div>
+        </div>
+        <div class="btn-next">
+        <button class="next">Next</button>
+        </div>
+    </div>
+    <div class="Method-of-delivery card">
+        <div class="mth-dlv-crd">
+        <div class="mth-dlv">
+            <div class="home-adr">
+            <input type="radio" name="pay" class="radio" id="bc1" checked>
+                    <label for="bc1" class="labe-hmd-adr">
+                            <h4>To the home address</h4></label>
+                        </div>
+                        <div class="pick-up">
+                    <input type="radio" name="pay" class="radio" id="bc2">
+                    <label for="bc2" class="labe-pick">
+                            <h4>Pick up at the store</h4>
+                <select name="" id="" class="select">
+                    <option value="">- Select a store to pick up -</option>
+                    <option value="">Begrad</option>
+                    <option value="">Novi Sad</option>
+                    <option value="">Sremska Mitrovica</option>
+                    <option value="">Nis</option>
+                    <option value="">Subotica</option>
+                    <option value="">Pancevo</option>
+                    <option value="">Vranje</option>
+                    <option value="">Zajecar</option>
+                </select>
+                </label>
+            </div>
+        </div>
+        </div>
+        <div class="btn-next">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+            </div>
+    </div>
+        <div class="Customer-data card">
+            <div class="cst-dt">
+        <div class="cst-data">
+            <div class="na-ph">
+            <div class="name">
+                <p>Name<sup>*</sup></p>
+                <input type="text" name="name" minlength="0" maxlength="20" value>
+            </div>
+            <div class="phone">
+                <p>Phone<sup>*</sup></p>
+                <input type="phone" name="phone" minlength="0" maxlength="20" placeholder="Number phone" value>
+            </div>
+            </div>
+            <div class="ln-da">
+            <div class="last-name">
+                <p>Last name<sup>*</sup></p>
+                <input type="text" name="lname" minlength="0" maxlength="20" value>
+            </div>
+            <div class="dlv-adr">
+                <p>Delivery address<sup>*</sup></p>
+                <input type="text" name="address" minlength="0" maxlength="50" value>
+            </div>
+        </div>
+        <div class="em-pc-c">
+            <div class="e-mail">
+                <p>E-mail<sup>*</sup></p>
+                <input type="email" name="email" minlength="0" maxlength="50" value>
+            </div>
+            <div class="pc-city">
+            <div class="post-code">
+                <p>Postal code<sup>*</sup></p>
+                <input type="text" name="postal_code" minlength="0" maxlength="5" value>
+            </div>
+            <div class="city">
+                <p>City<sup>*</sup></p>
+                <input type="text" name="City" minlength="0" maxlength="40" value>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="btn-next">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+            </div>
+    </div>
+        <div class="Method-of-payment card">
+            <div class="mtd-of-pym">
+        <div class="mtd-of-paymt">
+            <div class="card-payment">
+                <input type="radio" name="pay" class="radio" id="bc3" checked>
+                        <label for="bc3" class="card-img-cont">
+                            <div class="card-payt">
+                            <h3>Card payment</h3>
+                            <img width="100px" src="img/png-clipart-credit-card-logo-encapsulated-postscript-visa-eps-blue-cdr-removebg-preview.png" alt="">
+                            </div>
+                            <div class="crd-paymt">
+                                <div class="card-number">
+                                <p>Card number</p>
+                                <input type="tel" inputmode="numeric" pattern="\d" maxlength="19" autocomplete="cc-number" placeholder="xxxx xxxx xxxx xxxx">
+                            </div>
+                            <div class="exp-date">
+                                <p>Expiration date</p>
+                                <select name="" id="Mounth">
+                                    <option value="">Mounth</option>
+                                    <option value="">01</option>
+                                    <option value="">02</option>
+                                    <option value="">03</option>
+                                    <option value="">04</option>
+                                    <option value="">05</option>
+                                    <option value="">06</option>
+                                    <option value="">07</option>
+                                    <option value="">08</option>
+                                    <option value="">09</option>
+                                    <option value="">10</option>
+                                    <option value="">11</option>
+                                    <option value="">12</option>
+                                </select>
+                                <select name="" id="Year">
+                                    <option value="">Year</option>
+                                    <option value="">2022</option>
+                                    <option value="">2023</option>
+                                    <option value="">2024</option>
+                                    <option value="">2025</option>
+                                    <option value="">2026</option>
+                                    <option value="">2027</option>
+                                    <option value="">2028</option>
+                                    <option value="">2029</option>
+                                    <option value="">2030</option>
+                                    <option value="">2031</option>
+                                    <option value="">2032</option>
+                                    <option value="">2033</option>
+                                </select>
+                            </div>
+                            <div class="scrt">
+                                <p>Security</p>
+                                <input type="tel" pattern="\d*" maxlength="4" placeholder="CVC">
+                            </div>
+                            </div>
+                            </label>
+                            </div>
+                            <div class="paypal">
+                        <input type="radio" name="pay" class="radio" id="bc4">
+                        <label for="bc4" class="paypal-con-img">
+                            <div class="paypal-cont">
+                            <h3>Paypal</h3>
+                            <img width="50px" src="img/Paypal_2014_logo.png" alt="">
+                            </div>
+                            <div class="em-passw">
+                                <div class="email">
+                                    <p>Email</p>
+                                    <input type="email" required>
+                                </div>
+                                <div class="password">
+                                    <p>Password</p>
+                                    <input type="password" required>
+                                </div>
+                            </div>
+                    </label>
+                </div>
+        </div>
+        </div>
+        <div class="btn-next">
+            <button class="prev">Prev</button>
+            <button class="next">Next</button>
+            </div>
+    </div>
+        <div class="Cart-overview  card">
+            <div class="cart-ov-t">
+        <div class="cart-over">
+            <div class="items-over">
+                <h3>Items</h3>
+                <div class="tem" style="display:flex; align-items: center;">
+                    <img src="img/10c859121bfd13c510616fe9d440c863.png" width="100px" alt="">
+                    <h4>APPLE iPhone 13 Pro Max 128GB Sierra Blue</h4>      
+                </div>
+            </div>
+            <hr>
+            <div class="mtd-dlv-over">
+                <h3>Method of delivery</h3>
+                <p></p>
+                <p></p>
+            </div>
+            <hr>
+            <div class="dlv-adr-over">
+                <h3>Delivery address</h3>
+                <span>Name and Last name:</span>
+                <span>Address:</span>
+                <span>Place:</span>
+                <span>Phone:</span>
+                <span>E-mail:</span>
+            </div>
+            <hr>
+            <div class="mtd-pay-over">
+                <h3>Method of payment</h3>
+                <p></p>
+                <p></p>
+            </div>
+            <hr>
+        </div>
+            </div>
+        <div class="btn-next">
+            <button class="prev">Prev</button>
+            <button class="submit">Submit</button>
+            </div>
+    </div>
+    <div class="total">
+        <h2>Total</h2>
+        <p><span class="tot">1536</span><span>$</span></p>
+    </div>
+</div>
+</div>
+    </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
